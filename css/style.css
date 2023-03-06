@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-section {
+    max-width: 1064px;
+    margin: 3rem auto 1rem auto;
+}
+
+.top-section h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-form label {
+    margin-bottom: 0.5rem;
+}
+
+.search-form input {
+    width: 500px;
+    height: 45px;
+    padding: 0.5rem;
+    border-radius: 15px;
+    border: 1px solid black;
+
+}
+
+.pokemon-wrapper {
+    min-height: 900px;
+    max-width: 1100px;
+    /* background-color: rgb(211, 211, 211); */
+    margin: 0 auto;
+    border-radius: 15px;
+    
+}
+
+.pokemon-container {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1064px;
+    gap: 1rem;
+    margin: auto;
+}
+
+.pokemon {
+    text-align: center;
+    border: 1px solid grey;
+    background-color: rgb(233, 233, 233);
+    min-width: 200px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: black;
+}
+
+
+.id-number {
+    color: grey;
+    font-weight: 100;
+}
+
+.pokemon:hover {
+    border: 1px solid #cc0000;
+    color: #cc0000;;
+}
+
+.pokemon:hover img{
+    animation-name: imagezoom;
+    animation-duration: 0.4s;
+}
+
+header {
+    background-color: #cc0000;
+}
+
+nav {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1064px;
+}
+
+.nav-element {
+    padding: 0.5rem 1.5rem;
+    border-left: 1px solid #610000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.2s;
+    background-color: #b30000;
+}
+
+.active {
+    background-color: #830000;
+}
+
+.contact-nav {
+    border-right: 1px solid #610000;
+}
+
+.nav-element:hover {
+    background-color: #830000
+}
+
+
+.buttons {
+    margin: 1rem auto 0 auto;
+    width: fit-content;
+    display: flex;
+    gap: 0.5rem;
+   
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    display: flex;
+    gap: 1rem;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: #830000;
+}
+
+.btn:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.btn:disabled:hover {
+    background-color: #cc0000
+}
+
+.page-number {
+    margin: 1rem auto;
+    width: fit-content;
+}
+
+@keyframes imagezoom {
+    0% {
+        width: 100%;
+    }
+
+    50% {
+        width: 110%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

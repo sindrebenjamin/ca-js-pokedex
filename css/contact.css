@@ -1,0 +1,65 @@
+form {
+    background-color: rgb(233, 233, 233);
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+
+.form-wrapper {
+    max-width: 1064px;
+    margin: 5% auto;
+}
+
+#subject,
+#full-name,
+#email {
+    height: 40px;
+}
+
+
+#message {
+    height: 100px;
+    resize: none;
+}
+
+input,
+#message {
+    width: 500px;
+    border-radius: 5px;
+    padding: 0.5rem;
+    border: 1px solid grey;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    color: white;
+    transition: 0.2s;
+    background-color: #cc0000;
+    border-radius: 5px;
+    margin-top: 1rem;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #830000;
+}
+
+label {
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.form-error {
+    display: none;
+    color: red;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
