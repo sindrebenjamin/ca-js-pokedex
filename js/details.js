@@ -38,59 +38,8 @@ function createHtml(details) {
 
     let mainType = details.types[0].type.name;
 
-    if(mainType === "normal"){
-        nameContainer.classList.add("normal-type");
-    }
-    if(mainType === "bug"){
-        nameContainer.classList.add("bug-type");
-    }
-    if(mainType === "fight"){
-        nameContainer.classList.add("fight-type");
-    }
-    if(mainType === "ghost"){
-        nameContainer.classList.add("ghost-type");
-    }
-    if(mainType === "electric"){
-        nameContainer.classList.add("electric-type");
-    }
-    if(mainType === "flying"){
-        nameContainer.classList.add("flying-type");
-    }
-    if(mainType === "steel"){
-        nameContainer.classList.add("steel-type");
-    }
-    if(mainType === "psychic"){
-        nameContainer.classList.add("psychic-type");
-    }
-    if(mainType === "poison"){
-        nameContainer.classList.add("poison-type");
-    }
-    if(mainType === "fire"){
-        nameContainer.classList.add("fire-type");
-    }
-    if(mainType === "fairy"){
-        nameContainer.classList.add("fairy-type");
-    }
-    if(mainType === "ice"){
-        nameContainer.classList.add("ice-type");
-    }
-    if(mainType === "ground"){
-        nameContainer.classList.add("ground-type");
-    }
-    if(mainType === "water"){
-        nameContainer.classList.add("water-type");
-    }
-    if(mainType === "dragon"){
-        nameContainer.classList.add("dragon-type");
-    }
-    if(mainType === "rock"){
-        nameContainer.classList.add("rock-type");
-    }
-    if(mainType === "grass"){
-        nameContainer.classList.add("grass-type");
-    }
-    if(mainType === "dark"){
-        nameContainer.classList.add("dark-type");
+    if(mainType === details.types[0].type.name) {
+        nameContainer.classList.add(`${details.types[0].type.name}-type`);
     }
 
 
@@ -136,84 +85,17 @@ function createHtml(details) {
     //Type
     for(let i = 0; i < details.types.length; i++) {
 
+       
+
         const type = document.createElement("p");
         type.innerText = capitalization(details.types[i].type.name);
         type.classList.add("type");
-    
-    
-        if(type.innerText === "Normal") {
-            type.classList.add("normal-type")
+
+        if(type.innerText === capitalization(details.types[i].type.name)) {
+            type.classList.add(`${details.types[i].type.name}-type`);
         }
-    
-        if(type.innerText === "Bug") {
-            type.classList.add("bug-type")
-        }
-    
-        if(type.innerText === "Fight") {
-            type.classList.add("fight-type")
-        }
-    
-        if(type.innerText === "Ghost") {
-            type.classList.add("ghost-type")
-        }
-    
-        if(type.innerText === "Electric") {
-            type.classList.add("electric-type")
-        }
-    
-        if(type.innerText === "Flying") {
-            type.classList.add("flying-type")
-        }
-    
-        if(type.innerText === "Steel") {
-            type.classList.add("steel-type")
-        }
-    
-        if(type.innerText === "Psychic") {
-            type.classList.add("psychic-type")
-        }
-        
-        if(type.innerText === "Poison") {
-            type.classList.add("poison-type")
-        }
-    
-        if(type.innerText === "Fire") {
-            type.classList.add("fire-type")
-        }
-    
-        if(type.innerText === "Fairy") {
-            type.classList.add("fairy-type")
-        }
-    
-        if(type.innerText === "Ice") {
-            type.classList.add("ice-type")
-        }
-    
-        if(type.innerText === "Ground") {
-            type.classList.add("ground-type")
-        }
-    
-        if(type.innerText === "Water") {
-            type.classList.add("water-type")
-        }
-    
-        if(type.innerText === "Dragon") {
-            type.classList.add("dragon-type")
-        }
-    
-        if(type.innerText === "Rock") {
-            type.classList.add("rock-type")
-        }
-    
-        if(type.innerText === "Grass") {
-            type.classList.add("grass-type")
-        }
-    
-        if(type.innerText === "Dark") {
-            type.classList.add("dark-type")
-        }
-    
-    
+
+
         typeContainer.append(type);
     }
 
