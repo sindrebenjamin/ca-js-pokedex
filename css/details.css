@@ -62,7 +62,7 @@
 }
 
 .inner-details {
-    padding: 4rem 4rem 4rem 4rem;
+    padding: 4rem;
 }
 
 .name-container {
@@ -116,6 +116,10 @@
 }
 
 .fight-type {
+    background: linear-gradient(360deg, rgb(172, 66, 24) 0%, rgb(97, 26, 4) 32%, rgb(97, 31, 5) 58%, rgb(179, 64, 10) 100%);
+}
+
+.fighting-type {
     background: linear-gradient(360deg, rgb(172, 66, 24) 0%, rgb(97, 26, 4) 32%, rgb(97, 31, 5) 58%, rgb(179, 64, 10) 100%);
 }
 
@@ -248,4 +252,53 @@
 
 .hidden {
     display: none;
+}
+
+
+
+@media (max-width: 1130px) {
+    .top-details {
+        flex-direction: column;
+        
+    }
+
+
+    .details-container,
+    .back-container  {
+        max-width: 90%;
+    }
+    
+    .height-weight-container {
+        margin-bottom: 1rem;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 590px) {
+
+    .inner-details {
+        padding: 1rem;
+    }
+
+    .base-stats-wrapper {
+        background-color: rgb(255, 255, 255, 0.5);
+        height: fit-content;
+        padding: 1rem;
+        border-radius: 15px;
+        border: 1px solid grey;
+    
+    }
+
+    .stats-wrapper {
+        gap: 2rem;
+    }
+
+    .details-container,
+    .back-container  {
+        max-width: 95%;
+    }
 }

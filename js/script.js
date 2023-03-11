@@ -64,7 +64,7 @@ function createObject(data) {
 
 
 function createHtml(dataFromArray) {
-console.log(dataFromArray)
+
     
 
     pokeContainer.innerHTML = "";

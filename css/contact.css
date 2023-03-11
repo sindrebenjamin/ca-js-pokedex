@@ -11,7 +11,7 @@ form {
 
 .form-wrapper {
     max-width: 1064px;
-    margin: 5% auto;
+    margin: 10% auto;
 }
 
 #subject,
@@ -62,4 +62,25 @@ label {
 
 h1 {
     margin-bottom: 1rem;
+}
+
+
+@media (max-width: 583px) {
+
+    form {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .form-wrapper {
+        max-width: 1064px;
+        margin: auto;
+    }
+    
+
+    input,
+    #message {
+        width: 100%;
+    }
+
 }

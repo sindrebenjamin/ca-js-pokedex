@@ -97,7 +97,6 @@ nav {
 
 .nav-element {
     padding: 0.5rem 1.5rem;
-    border-left: 1px solid #610000;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -111,9 +110,6 @@ nav {
     background-color: #830000;
 }
 
-.contact-nav {
-    border-right: 1px solid #610000;
-}
 
 .nav-element:hover {
     background-color: #830000
@@ -170,4 +166,94 @@ nav {
     100% {
         width: 100%;
     }
+}
+
+
+
+@media (max-width: 1063px) {
+    .pokemon-container,
+    .top-section,
+    .pokemon-wrapper {
+        width: 848px;
+    }
+
+
+}
+
+@media (max-width: 890px) {
+
+    .pokemon-container,
+    .top-section,
+    .pokemon-wrapper {
+        width: 632px;
+    }
+
+}
+
+
+@media (max-width: 670px) {
+
+    .pokemon-container,
+    .top-section,
+    .pokemon-wrapper {
+        width: 416px;
+    }
+
+    .search-form input {
+        width: 100%;
+    }
+
+
+}
+
+
+@media (max-width: 454px) {
+
+    .pokemon {
+        min-width: 150px;
+        min-height: 150px;
+
+    }
+
+    .pokemon-container,
+    .top-section,
+    .pokemon-wrapper {
+        width: 316px;
+    }
+
+    .buttons {
+        width: fit-content;
+        display: flex;
+        gap: 0.5rem;
+       
+    }
+    
+    .btn {
+        padding: 0.5rem 0.6rem;
+        cursor: pointer;
+        border-radius: 15px;
+        background-color: #cc0000;
+        color: white;
+        border: none;
+        display: flex;
+        gap: 0.4rem;
+        transition: 0.2s;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .pokemon {
+        min-width: 143px;
+        min-height: 143px;
+
+    }
+
+    .pokemon-container,
+    .top-section,
+    .pokemon-wrapper {
+        width: 306px;
+    }
+
 }
